@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimus Design</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="Styles/universal.css">
+    <link rel="stylesheet" href="Styles/desktop.css" id="swap-style">
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/Favicon/site.webmanifest">
+</head>
+<body class="top-border" onload="swapStyle()">
+    <header>
+        <nav onclick="showMenu()" class="pointer"></nav>
+        <div class="logo pointer" onclick="window.location.href='index.html'"></div> 
+    </header>
+    <div id="menu-dropdown">
+        <div id="close" class="contain no-repeat" onclick="showMenu()"></div>
+        <li><a href="index.html" class="accent-link">Home</a></li>
+        <li><a href="quote.html" class="accent-link">Get a Quote</a></li>
+        <li><a href="portfolio.html" class="accent-link">Portfolio</a></li>
+        <li><a href="contact.html" class="accent-link">Contact</a></li>
+        <li><a href="design.html" class="accent-link">Design Process</a></li>
+    </div>
+    <main class="two-col">
+        <div class="title left">
+            <h1>Web design to elevate your business</h1>
+        </div>
+        <div id="home-image" class="image-container right contain no-repeat"></div>
+        <div class="el-1">
+            <h2>With a combination of clean design, modern code, and digital content creation we
+               help you reach more customers.
+            </h2>
+        </div>
+        <div class="el-2 button-container left">
+            <button onclick="window.location.href='quote.html'" class="unselectable pointer">GET A QUOTE</button>
+            <button onclick="window.location.href='portfolio.html'" class="unselectable pointer">PORTFOLIO</button>
+            <button onclick="window.location.href='contact.html'" class="unselectable pointer">CONTACT</button>
+            <button onclick="window.location.href='design.html'" class="unselectable pointer">DESIGN PROCESS</button>
+        </div>
+    </main>
+</body>
+</html>
