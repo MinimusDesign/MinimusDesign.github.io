@@ -5,7 +5,7 @@ function swapStyle() {
     sheet = document.getElementById("swap-style")
 
     if(screen.width <= 900) {
-        sheet.setAttribute("href", "Styles/mobile.css")
+        sheet.setAttribute("href", "/Styles/mobile.css")
         isMobile = true
     }
 }
