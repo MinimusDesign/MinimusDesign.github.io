@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimus Design</title>
+    <script src="scripts.js"></script>
     <link rel="stylesheet" href="Styles/universal.css">
     <link rel="stylesheet" href="Styles/desktop.css">
         <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
@@ -13,9 +14,17 @@
 </head>
 <body class="top-border">
     <header>
-        <nav></nav>
+        <nav onclick="showMenu()" class="pointer"></nav>
         <div class="logo pointer" onclick="window.location.href='index.html'"></div>
     </header>
+    <div id="menu-dropdown">
+        <div id="close" class="contain no-repeat" onclick="showMenu()"></div>
+        <li><a href="index.html" class="accent-link">Home</a></li>
+        <li><a href="quote.html" class="accent-link">Get a Quote</a></li>
+        <li><a href="portfolio.html" class="accent-link">Portfolio</a></li>
+        <li><a href="contact.html" class="accent-link">Contact</a></li>
+        <li><a href="design.html" class="accent-link">Design Process</a></li>
+    </div>
     <main class="two-col">
         <div class="title">
             <h1>Get a Quote</h1>
