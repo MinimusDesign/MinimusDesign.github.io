@@ -113,7 +113,7 @@ main > img {
 }
 
 #menu-dropdown {
-    visibility: visible;
+    visibility: hidden;
 
     width: 100vw;
     height: auto;
